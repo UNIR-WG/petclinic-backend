@@ -66,7 +66,6 @@ export default function() {
         });
         sleep(SLEEP_DURATION);
 
-
         // Request No. 3
         request = http.del(url);
         check(request, {
@@ -83,7 +82,6 @@ export default function() {
             "Pet type details found and returned.": (r) => r.status === 200
         });
         sleep(SLEEP_DURATION);
-
 
         // Request No. 3
         request = http.del(url);
@@ -102,7 +100,6 @@ export default function() {
         });
         sleep(SLEEP_DURATION);
 
-
         // Request No. 3
         request = http.del(url);
         check(request, {
@@ -119,7 +116,6 @@ export default function() {
             "Owner details found and returned.": (r) => r.status === 200
         });
         sleep(SLEEP_DURATION);
-
 
         // Request No. 3
         request = http.del(url);
@@ -139,7 +135,6 @@ export default function() {
         });
         sleep(SLEEP_DURATION);
 
-
     });
     group("/api/visits", () => {
         let url = BASE_URL + `/api/visits`;
@@ -149,7 +144,6 @@ export default function() {
             "visits found and returned.": (r) => r.status === 200
         });
         sleep(SLEEP_DURATION);
-
 
     });
     group("/api/vets", () => {
