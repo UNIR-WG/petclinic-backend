@@ -1,0 +1,14 @@
+
+Generar script automático para k6 (teniendo lanzado el pet en el 8080)
+java -jar openapi-generator-cli-5.3.0.jar generate -i http://localhost:8080/v2/api-docs -g k6 -o ./k6-test --skip-validate-spec
+
+https://k6.io/docs/getting-started/running-k6/
+
+Lanzar:
+k6 run script.js
+
+Lanzar lanzar cargas con diversos virtual users y duración temporal (ej. 10-VU y 30 segundos)
+k6 run --vus 10 --duration 30s script.js
+
+Lanzar con salida en otros formatos:
+k6 run --vus 10 --duration 5s --out csv=sample.csv script.js
